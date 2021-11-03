@@ -1,0 +1,19 @@
+<h1>Tabela de Clientes - Teste Front End</h1>
+<hr>
+
+
+<table cdk-table class="mat-elevation-z8" id="users">
+
+  <tr>
+    <th cdk-header-row *ngFor="let col of columns">
+      {{col}}
+    </th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td mat-cell *ngFor="let col of index">
+      {{user[col]}}
+    </td>
+  </tr>
+
+</table>
+<hr>
